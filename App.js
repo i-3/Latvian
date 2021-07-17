@@ -25,12 +25,12 @@ export default function App() {
         />
         <Stack.Screen name='lessons'
                       component={Lessons}
-                      options={{title: 'Список уроков'}}
+                      options={{title: 'Topics'}}
         />
         <Stack.Screen name='lesson'
                       component={Lesson}
                       options={({route}) => ({
-          title: route.params.lessonId+'-й урок. '+route.params.lessonName})}
+          title: route.params.lessonId+'. '+route.params.lessonName})}
         />
       </Stack.Navigator>
     </NavigationContainer>
@@ -57,13 +57,12 @@ const Home = ({ navigation }) => {
               width: 310,
             }}>
         <Text style={{
+                textAlign: 'center',
                 fontSize: 20,
                 color: '#133398',
               }}>
-          {'    '}Это приложение развивает навыки слушания и
-          говорения. Выбери из списка урок и слушай диалоги.
-          В тексте фразы ограничены скобками. Повторяй фразы
-          в паузах длительностью, равной самой фразе.
+          {'    '}Choose a topic and listen to the dialogues.{'\n'}
+                  Repeat phrases in pauses.
         </Text>
         <Text style={{
                 textAlign: 'center',
@@ -72,7 +71,7 @@ const Home = ({ navigation }) => {
                 fontWeight: 'bold',
               }}
               onPress={() => navigation.navigate('lessons')}>
-          Список уроков
+          Topics
         </Text>
       </View>
     </View>
@@ -96,29 +95,29 @@ const Lesson = ({route}) => {
 };
 
 const DATA = [
-  {id: '1', title: 'Здравствуйте! и Labdien!'},
-  {id: '2', title: 'Давайте познакомимся!'},
-  {id: '3', title: 'Где вы живёте?'},
-  {id: '4', title: 'Говорите ли вы по-латышски?'},
-  {id: '5', title: 'Приятного аппетита!'},
-  {id: '6', title: 'В гостях'},
-  {id: '7', title: 'Сколько сейчас времени?'},
-  {id: '8', title: 'Погода'},
-  {id: '9', title: 'Телефон'},
-  {id: '10', title: 'Чем заняться?'},
-  {id: '11', title: 'Увлечения'},
-  {id: '12', title: 'Немного о семье'},
-  {id: '13', title: 'В пути'},
-  {id: '14', title: 'В школу'},
-  {id: '15', title: 'Я плохо себя чувствую'},
-  {id: '16', title: 'Извинения'},
-  {id: '17', title: 'На концерте'},
-  {id: '18', title: 'Во время антракта'},
-  {id: '19', title: 'На Празднике песни'},
-  {id: '20', title: 'Поговорим о работе'},
-  {id: '21', title: 'На работе'},
-  {id: '22', title: 'В магазине'},
-  {id: '23', title: 'Дружба и любовь'},
+  {id: '1', title: 'Hello and Labdien!'},
+  {id: '2', title: 'Getting Acquainted'},
+  {id: '3', title: 'Where Do You Live?'},
+  {id: '4', title: 'Do You Speak Latvian?'},
+  {id: '5', title: 'Meals'},
+  {id: '6', title: 'At a Party'},
+  {id: '7', title: 'What Time and When?'},
+  {id: '8', title: 'Weather'},
+  {id: '9', title: 'Telephone'},
+  {id: '10', title: 'What Shall We Do?'},
+  {id: '11', title: 'Hobbies'},
+  {id: '12', title: 'About the Family'},
+  {id: '13', title: 'On the Way'},
+  {id: '14', title: 'To School'},
+  {id: '15', title: "I Don't Feel Well"},
+  {id: '16', title: 'Excuses'},
+  {id: '17', title: 'At a Concert'},
+  {id: '18', title: 'During Intermission'},
+  {id: '19', title: 'At the Song Festival'},
+  {id: '20', title: "Let's Talk About Work"},
+  {id: '21', title: 'At Work'},
+  {id: '22', title: 'In a Store'},
+  {id: '23', title: 'Friendship and Love'},
 ];
 
 const Item = ({ item, onPress, style }) => (
