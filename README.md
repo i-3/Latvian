@@ -1,7 +1,6 @@
 # Latvian
 This React Native application develops the skill of speaking Latvian.
 
-![1_240](https://user-images.githubusercontent.com/55412563/123690420-060cea80-d85d-11eb-8686-55bae72eb149.jpg)
-![2_240](https://user-images.githubusercontent.com/55412563/123690430-0907db00-d85d-11eb-828c-bb8a27d19429.jpg)
-![3_240](https://user-images.githubusercontent.com/55412563/123690443-0d33f880-d85d-11eb-8ec0-f325de775a76.jpg)
-
+![1_300](https://user-images.githubusercontent.com/55412563/126035852-6a81b0d0-06a1-4df6-b65f-86a282685c7b.jpg)
+![2_300](https://user-images.githubusercontent.com/55412563/126035855-acd9feb1-f164-4964-a088-1cf9c9576d7f.jpg)
+![3_300](https://user-images.githubusercontent.com/55412563/126035858-85c39f86-2dda-4088-af7a-d4c7eeace223.jpg)
